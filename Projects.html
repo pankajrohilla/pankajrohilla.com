@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2 {
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      font-size: 1.8rem;
+    }
+	
+	.writing-sidebar {
+	  float: right;
+	  width: 1200px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 800px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+	
+	.card-container {
+	      display: grid;
+	      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	      gap: 2rem;
+	      max-width: 1200px;
+	      margin: 0 auto;
+	    }
+
+	    .card {
+	      background-color: #fff;
+	      border-radius: 16px;
+	      padding: 2rem 1rem 1.5rem;
+	      text-align: center;
+	      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+	      transition: transform 0.3s ease, box-shadow 0.3s ease;
+	    }
+
+	    .card:hover {
+	      transform: translateY(-8px);
+	      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12);
+	    }
+
+		.card img {
+		  width: 90%;
+		  height: auto;
+		  object-fit: cover;
+		  margin-bottom: 1rem;
+		  border-radius: 12px; /* optional: for slightly rounded corners */
+		}
+
+	    .card h3 {
+	      margin: 0 0 0.5rem;
+	      font-size: 1.2rem;
+	      color: #222;
+	    }
+
+	    .card p {
+	      margin: 0 0 1rem;
+	      color: #555;
+	      font-size: 0.95rem;
+	      line-height: 1.5;
+	    }
+
+	    .card a.button {
+	      display: inline-block;
+	      padding: 0.5rem 1.2rem;
+	      font-size: 0.9rem;
+	      background-color: #007bff;
+	      color: white;
+	      border-radius: 6px;
+	      text-decoration: none;
+	      transition: background-color 0.3s ease;
+	    }
+
+	    .card a.button:hover {
+	      background-color: #0056b3;
+	    }
+
+	    .collapsible {
+	      cursor: pointer;
+	      color: #007bff;
+	      background: none;
+	      border: none;
+	      font-size: 0.9rem;
+	      margin-top: 0.5rem;
+	      padding: 0;
+	    }
+
+	    .collapsible:focus {
+	      outline: none;
+	    }
+
+	    .collapsible-content {
+	      max-height: 0;
+	      overflow: hidden;
+	      transition: max-height 0.3s ease;
+	      font-size: 0.9rem;
+	      color: #444;
+	      margin-top: 0.5rem;
+	    }
+
+	    .collapsible-content.open {
+	      max-height: 500px; /* arbitrary max-height for smooth transition */
+	    }
+		
+		
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo -->
+  <div class="header-img-wrapper">
+    <a href="file:///Users/pankajrohilla/Downloads/Website/About.html" target="_self" rel="noopener noreferrer">
+      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+    </a>
+  </div>
+  
+  <!-- ✅ Main 3-column layout below the logo -->
+  <div class="main-wrapper">
+    <!-- Left: Link box -->
+    <nav class="link-box">
+      <a href="file:///Users/pankajrohilla/Downloads/Website/About.html">About</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Projects.html">Projects</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Publications.html">Publications</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/CV.html">CV</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Gallery.html">Gallery</a>
+	  <a href="file:///Users/pankajrohilla/Downloads/Website/Travels.html">Travels</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Misc.html">Miscellaneous</a>
+    </nav>
+
+    <!-- Center: Bio text -->
+	<aside class="writing-sidebar">
+	   
+	   <h1>Projects</h1>
+	   
+	   
+		  <h2>Medical devices and Drug Delivery</h2>
+		  
+		  
+ 	     <div class="card-container">
+ 	       <div class="card">
+ 	         <img src="Projects/ePatch_1.jpg" alt="Project 1" />
+ 	         <div class="card-content">
+ 	           <h3>Low-cost Electroporators</h3>
+ 	           <p>Inspired by BBQ lighters, low-cost pulser delivers mRNA and DNA to skin cells.</p>
+ 	         </div>
+ 	       </div>
+		 
+ 	       <div class="card">
+ 	         <img src="Projects/NFJI.jpg" alt="Project 2" />
+ 	         <div class="card-content">
+ 	           <h3>Needle-free jet injection</h3>
+ 	           <p>Hair-thin jets deliver dyes and vaccines painlessly through the skin, mimicking tattooing.</p>
+ 	         </div>
+ 	       </div>
+		   
+ 	       
+ 	       <div class="card">
+ 	           <img src="Projects/spark.gif" alt="Project 2" style="width: 80%; display: block; margin: 0.8em auto;" />
+ 	         <div class="card-content">
+ 	           <h3>Cavitation-induced microjets</h3>
+ 	           <p>Generating microjets using laser- and spark-induced cavitation for drug delivery.</p>
+ 	         </div>
+ 	       </div>
+		   
+ 	       <div class="card">
+ 	         <img src="Projects/tattoo.jpg" alt="Project 2" />
+ 	         <div class="card-content">
+ 	           <h3>Tattooing drugs</h3>
+ 	           <p>Tattooing penetrates the stratum corneum and creates channels for drug delivery to dermis.</p>
+ 	         </div>
+ 	       </div>
+		   
+ 	       <div class="card">
+ 	         <img src="Projects/counterpressure.gif" alt="Project 2" />
+ 	         <div class="card-content">
+ 	           <h3>Injection mechanics</h3>
+ 	           <p>Counterpressure during injections in different parts of skin and how to minimize it.</p>
+ 	         </div>
+ 	       </div>
+		   
+		   
+		   
+ 	     </div>
+		  
+		  
+		  
+		  <br><br>
+		  <h2>Interfacial fluid dynamics and Organismal Biophysics</h2>
+		   
+
+	     <div class="card-container">
+	       
+
+	       
+
+	       <div class="card">
+	         <img src="Projects/splash.jpg" alt="Project 3" />
+	         <div class="card-content">
+	           <h3>Science of splashes</h3>
+	           <p>How to make big splashes - revealing fluid-structure interactions in dynamic environments.</p>
+	         </div>
+	       </div>
+		   
+		   
+	       <div class="card">
+	         <img src="Projects/Flamingo_Steve_Garvie2.jpg" alt="Project 3" />
+	         <div class="card-content">
+	           <h3>Water bending in Flamingoes</h3>
+	           <p>Flamingoes generate vortices by feet stomping, beak chattering, retraction and skimming.</p>
+	         </div>
+	       </div>
+		   
+	       <div class="card">
+	         <img src="Projects/microvelia.png" alt="Project 2" />
+	         <div class="card-content">
+	           <h3>Walking on water</h3>
+	           <p>Interfacial fluid dynamics of water walking in tiny insects and what it holds for microrobotics.</p>
+	         </div>
+	       </div>
+		   
+
+	       <div class="card">
+	         <img src="Projects/fluidic.jpg" alt="Project 2" />
+	         <div class="card-content">
+	           <h3>Fluid ejections in nature</h3>
+	           <p>Unifying organismal fluidic ejections from micro spores to elephants and whales.</p>
+	         </div>
+	       </div>
+ 
+		  
+		   
+	       
+		   
+		   
+		   
+	     </div>
+		 
+		 
+		 
+
+	  <!-- Continue similarly for earlier years… -->
+	</aside>
+	
+    
+
+  
+
+</body>
+</html>
