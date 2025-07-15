@@ -23,11 +23,17 @@
       font-size: 1.8rem;
     }
 	
+	
 	.writing-sidebar {
-	  float: right;
-	  width: 1000px;
-	  padding: 0 1rem;
+	  flex: 1 1 1200px; /* allows it to grow wider */
+	  padding: 0 0rem;
 	}
+	.writing-sidebar {
+	  flex: 1;
+	  padding: 0 1rem;
+	  max-width: 100%;
+	}
+	
 	.writing-sidebar h2 {
 	  font-size: 1.5rem;
 	  margin-top: 0;
@@ -38,7 +44,7 @@
 	}
 	.writing-sidebar ul {
 	  list-style: none;
-	  padding-left: 0;
+	  padding-left: 0em;
 	}
 	.writing-sidebar li {
 	  margin-bottom: 0.5rem;
@@ -81,10 +87,10 @@
       margin: 0 auto;
       gap: 1rem;
     }
-
+ 
     .link-box {
 	  width: 200px;
-      padding: 2rem 1.4rem;
+      padding: 2rem 0rem;
       flex-shrink: 0;
     }
 
@@ -127,18 +133,19 @@
 	.image-pair {
 	  display: flex;
 	  flex-wrap: wrap;
-	  justify-content: space-between;
 	  gap: 1rem;
-	  margin-top: 1rem;
+	  align-items: flex-start;
 	}
 
 	.image-pair img {
-	  flex: 1 1 calc(20% - 0.8rem); /* Up to 5 images per row */
-	  max-width: 100%;
 	  height: auto;
-	  object-fit: cover;
+	  width: auto;
+	  max-height: 250px;     /* optional: limit very tall images */
+	  max-width: 100%;        /* prevent image from overflowing container */
 	  border-radius: 4px;
+	  object-fit: contain;
 	}
+
 	
 	
 
@@ -168,6 +175,7 @@
 	}
     
 	
+	
 
       .link-box, .bio-image {
         width: 100%;
@@ -175,6 +183,17 @@
         margin-bottom: 2rem;
         text-align: center;
       }
+	  
+	  .link-box {
+	    width: 180px;
+	    flex-shrink: 0;
+	    padding: 2rem 1.5rem;
+	    text-align: left; /* ✅ This aligns the text to the left */
+	  }
+	  
+	  
+	 
+	
 
       .content {
         max-width: 100%;
@@ -217,11 +236,13 @@
 		  
 	 
 	 <div class="image-pair">
-	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p1.png" alt="Flamingo p1" />
-	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p2.png" alt="Flamingo p2" />
-	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p3.png" alt="Flamingo p3" />
-	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p4.png" alt="Flamingo p4" />
-	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p5.png" alt="Flamingo p5" />
+	   <img src="Gallery/IMG_0146.jpg" alt="Flamingo p1" />
+	   <img src="Gallery/IMG_0129.jpg" alt="Flamingo p2" />
+	   <img src="Gallery/IMG_9996-Enhanced-NR.jpg" alt="Flamingo p3" />
+	   <img src="Gallery/IMG_0098.jpg" alt="Flamingo p4" />
+	   <img src="Gallery/IMG_0097.jpg" alt="Flamingo p5" />
+	   <img src="Gallery/IMG_0099.jpg" alt="Flamingo p5" />
+	   
 	 </div>
 	 
 	   
