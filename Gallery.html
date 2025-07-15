@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2 {
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 550px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo -->
+  <div class="header-img-wrapper">
+    <a href="file:///Users/pankajrohilla/Downloads/Website/About.html" target="_self" rel="noopener noreferrer">
+      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+    </a>
+  </div>
+  
+  <!-- ✅ Main 3-column layout below the logo -->
+  <div class="main-wrapper">
+    <!-- Left: Link box -->
+    <nav class="link-box">
+      <a href="file:///Users/pankajrohilla/Downloads/Website/About.html">About</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Projects.html">Projects</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Publications.html">Publications</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/CV.html">CV</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Gallery.html">Gallery</a>
+	  <a href="file:///Users/pankajrohilla/Downloads/Website/Travels.html">Travels</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Misc.html">Miscellaneous</a>
+    </nav>
+
+    <!-- Center: Bio text -->
+    <main class="content">
+      <h2>Pankaj Rohilla is a postdoctoral research fellow and loves photography.</h2>
+      <p>He develops low-cost medical devices for drug delivery and explores the physics of living systems with <a href="https://bhamla.gatech.edu/" target="_blank" rel="noopener noreferrer">Saad Bhamla</a> and <a href="https://drugdelivery.chbe.gatech.edu/" target="_blank" rel="noopener noreferrer">Mark Prausnitz</a> at the Georgia Institute of Technology. He earned his Ph.D. in Chemical Engineering from Texas Tech University under the guidance of <a href="https://www.depts.ttu.edu/che/faculty/jeremy_marston/index.php" target="_blank" rel="noopener noreferrer">Jeremy Marston</a>.
+From hair-thin microjets and fluidic tattooing to a barbecue-lighter–inspired electroporator, his work combines creativity with function to enable innovative ways of delivering drugs across the skin. Fueled by curiosity, he also investigates how organisms interact with fluids—both on the surface and beneath the water.
+His contributions have been recognized through numerous honors, including the Eckert Postdoctoral Fellowship and the Horn Distinguished Professors Graduate Achievement Award.	  </p>
+     
+	  <p>He has published 17 peer-reviewed research articles spanning drug delivery, fluid dynamics, biophysics, and energy storage. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets including The Wall Street Journal, New Scientist, The Conversation, and Science News.  </p>
+	  
+	  <p> Born and raised in Yamunanagar, he currently resides in Atlanta.</p>
+    </main>
+
+    <!-- Right: Image -->
+    <div class="bio-image">
+      <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" />
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pankaj Rohilla. All rights reserved. Template inspired by C Wei.
+  </footer>
+
+</body>
+</html>
