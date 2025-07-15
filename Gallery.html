@@ -23,16 +23,39 @@
       font-size: 1.8rem;
     }
 	
-  	@font-face {
-  	  font-family: 'Adobe Caslon Pro';
-  	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
-  	       url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
-  	  font-weight: normal;
-  	  font-style: normal;
-  	  font-display: swap;
-  	}
-   
-
+	.writing-sidebar {
+	  float: right;
+	  width: 1000px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+	.highlight {
+	  color: #3D13F5; /* blue */
+	}
+	
+	
     p {
       font-size: 1rem;
       line-height: 1.6;
@@ -75,7 +98,7 @@
 
     .content {
       flex: 1;
-      max-width: 550px;
+      max-width: 1000px;
 	  margin-top: -1.5rem;
     }
 	
@@ -98,6 +121,26 @@
 		  border-radius: 50%;       /* Make it circular */
 		  display: block;
     }
+	
+	
+	
+	.image-pair {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  gap: 1rem;
+	  margin-top: 1rem;
+	}
+
+	.image-pair img {
+	  flex: 1 1 calc(20% - 0.8rem); /* Up to 5 images per row */
+	  max-width: 100%;
+	  height: auto;
+	  object-fit: cover;
+	  border-radius: 4px;
+	}
+	
+	
 
     footer {
       text-align: center;
@@ -106,11 +149,25 @@
       color: #555;
     }
 
-    @media (max-width: 900px) {
-      .main-wrapper {
-        flex-direction: column;
-        align-items: center;
-      }
+	@media (max-width: 900px) {
+	  .image-pair img {
+	    flex: 1 1 calc(33.33% - 0.8rem); /* 3 per row on tablets */
+	  }
+	}
+
+	@media (max-width: 600px) {
+	  .image-pair img {
+	    flex: 1 1 calc(50% - 0.8rem); /* 2 per row on phones */
+	  }
+	}
+
+	@media (max-width: 400px) {
+	  .image-pair img {
+	    flex: 1 1 100%; /* 1 per row on very small screens */
+	  }
+	}
+    
+	
 
       .link-box, .bio-image {
         width: 100%;
@@ -152,26 +209,28 @@
    </nav>
 
     <!-- Center: Bio text -->
-    <main class="content">
-      <h2>Pankaj Rohilla is a postdoctoral research fellow and loves photography.</h2>
-      <p>He develops low-cost medical devices for drug delivery and explores the physics of living systems with <a href="https://bhamla.gatech.edu/" target="_blank" rel="noopener noreferrer">Saad Bhamla</a> and <a href="https://drugdelivery.chbe.gatech.edu/" target="_blank" rel="noopener noreferrer">Mark Prausnitz</a> at the Georgia Institute of Technology. He earned his Ph.D. in Chemical Engineering from Texas Tech University under the guidance of <a href="https://www.depts.ttu.edu/che/faculty/jeremy_marston/index.php" target="_blank" rel="noopener noreferrer">Jeremy Marston</a>.
-From hair-thin microjets and fluidic tattooing to a barbecue-lighter–inspired electroporator, his work combines creativity with function to enable innovative ways of delivering drugs across the skin. Fueled by curiosity, he also investigates how organisms interact with fluids—both on the surface and beneath the water.
-His contributions have been recognized through numerous honors, including the Eckert Postdoctoral Fellowship and the Horn Distinguished Professors Graduate Achievement Award.	  </p>
-     
-	  <p>He has published 17 peer-reviewed research articles spanning drug delivery, fluid dynamics, biophysics, and energy storage. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets including The Wall Street Journal, New Scientist, The Conversation, and Science News.  </p>
+	<aside class="writing-sidebar">
+	   
+	   
 	  
-	  <p> Born and raised in Yamunanagar, he currently resides in Atlanta.</p>
-    </main>
+	  <h2>Nature</h2>  
+		  
+	 
+	 <div class="image-pair">
+	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p1.png" alt="Flamingo p1" />
+	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p2.png" alt="Flamingo p2" />
+	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p3.png" alt="Flamingo p3" />
+	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p4.png" alt="Flamingo p4" />
+	   <img src="https://rohillapankaj.com/Publications/flamingos_comic_p5.png" alt="Flamingo p5" />
+	 </div>
+	 
+	   
+	  <!-- Continue similarly for earlier years… -->
+	</aside>
+	
+    
 
-    <!-- Right: Image -->
-    <div class="bio-image">
-      <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" />
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Pankaj Rohilla. All rights reserved. Template inspired by C Wei.
-  </footer>
+  
 
 </body>
 </html>
