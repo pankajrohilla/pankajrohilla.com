@@ -19,13 +19,19 @@
       font-size: 1.8rem;
     }
 	
-    @font-face {
-     font-family: 'Adobe Caslon Pro';
-     src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2');
-     font-weight: normal;
-     font-style: normal;
-	 font-display: swap;
-   }
+	@font-face {
+	  font-family: 'Adobe Caslon Pro';
+	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
+	       url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: swap;
+	}
+	
+	
+	body {
+	  font-family: 'Adobe Caslon Pro', serif;
+	}
 
     p {
       font-size: 1rem;
@@ -42,6 +48,7 @@
       width: 170px;
       display: block;
     }
+	
 
 
 	.social-icons {
