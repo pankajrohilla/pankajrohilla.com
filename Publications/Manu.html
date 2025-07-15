@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2 {
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      font-size: 1.8rem;
+    }
+	
+	.writing-sidebar {
+	  float: right;
+	  width: 1000px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+	.highlight {
+	  color: #3D13F5; /* blue */
+	}
+	
+	
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 1000px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+	
+	
+	.image-pair {
+	  display: flex;
+	  gap: 1rem;
+	  margin-top: 1rem;
+	  flex-wrap: wrap;
+	  justify-content: flex-start;
+	}
+
+	.image-pair img {
+	  width: 40%;           /* Reduced from 48% to 30% */
+	  height: auto;
+	  object-fit: cover;
+	  border-radius: 4px;
+	}
+	
+	
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo -->
+  <div class="header-img-wrapper">
+    <a href="file:///Users/pankajrohilla/Downloads/Website/About.html" target="_self" rel="noopener noreferrer">
+      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+    </a>
+  </div>
+  
+  <!-- ✅ Main 3-column layout below the logo -->
+  <div class="main-wrapper">
+    <!-- Left: Link box -->
+    <nav class="link-box">
+      <a href="file:///Users/pankajrohilla/Downloads/Website/About.html">About</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Projects.html">Projects</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Publications.html">Publications</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/CV.html">CV</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Gallery.html">Gallery</a>
+	  <a href="file:///Users/pankajrohilla/Downloads/Website/Travels.html">Travels</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Misc.html">Miscellaneous</a>
+    </nav>
+
+    <!-- Center: Bio text -->
+	<aside class="writing-sidebar">
+	   
+	  <h3> <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/RS.png" alt="Example Image" width="100" /> </h3>
+	  
+	  <h2>Mastering the Manu—how humans create large splashes</h2>  
+		  
+ 	 <p> <span class="highlight"><em>Pankaj Rohilla</em></span>*, Daehyun Choi*, Halley Wallace†, Kai Lauren Yung†, Juhi Deora, Atharva Lele and Saad Bhamla</p>
+	 
+	 <p>Manu jumping, a popular water diving style among Maori people in New Zealand, focuses on creating large splashes. Divers perform aerial manoeuvres such as the ‘utkatasana’ pose, entering the water in a V-shape, and executing underwater manoeuvres to enhance the splash size. Our study explores the underlying fluid dynamics of Manu jumping and demonstrates how two key parameters, the V-angle and the timing of body opening, can enhance Worthington jet formation. To accurately replicate human Manu jumping, we studied water entry of both passive solid objects with varying V-angles and an active body opening robot (Manubot). The analysis revealed that a 45° V-angle enhances Worthington jet formation, consistent with human diving data. This angle balances a large cavity size and a deep pinch-off depth. The body opening within a timing window of 1.1−1.5 (dimensionless) synchronizes the robot’s potential energies to be timely transferred to the cavity formation, producing the strongest and most vertical, i.e. ideal, Worthington jets. Based on our experimental findings, we propose a range of parameters for generating the large Manu splashes. These insights offer engineering perspectives on how to modulate underwater cavity dynamics using both passive and active body formations. </p>
+	  <p> Read the paper <a href="file:///Users/pankajrohilla/Downloads/Website/Publications/Manu.pdf">here</a>.</p>
+	 
+	 <h3 style="margin-bottom: 0rem;">Media </h3>
+
+	<a href="https://www.newscientist.com/article/2461030-how-to-make-the-biggest-splash-in-a-pool-according-to-science/" target="_blank">  
+		   <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/New_scientist.jpg" alt="Example Image" width="50" />
+	 <a href="https://www.wsj.com/science/physics/big-splash-water-jump-3279a015?gaa_at=eafs&gaa_n=ASWzDAjT6c905WFduFRFoWoa8sqsV3QA6q2PwMb1OTJ91mRs3blKDajeFC1Q_bg8uBE%3D&gaa_ts=6874332b&gaa_sig=-NBgVcIqlhfhMpquVl0lAzrUXK9v6g_dBOX4wGO5KHSx21hqc0il3z2Hj763AfDKCuGqrIWTQt9K-MYmv-09UQ%3D%3D" target="_blank">
+	   <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/WSJ.png" alt="Example Image" width="280" />  <a href="https://theconversation.com/manu-jumping-the-physics-behind-making-humongous-splashes-in-the-pool-255837" target="_blank">
+	   <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/Conversation.png" alt="Example Image" width="250" />  <a href="https://www.sciencenews.org/article/biggest-splash-pool-manu-science" target="_blank">  
+		   <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/science_news.png" alt="Example Image" width="120" />
+	 </a> 
+
+	 
+<br><br>	 
+	 
+	 <h3>Comics </h3>
+	 
+	 <div class="image-pair">
+	   <img src="Manu_1.png" alt="Flamingo p1" />
+	   <img src="Manu_2.png" alt="Flamingo p2" />
+	 </div>
+	   
+	  <!-- Continue similarly for earlier years… -->
+	</aside>
+	
+    
+
+  
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2 {
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      font-size: 1.8rem;
+    }
+	
+	.writing-sidebar {
+	  float: right;
+	  width: 1000px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+	.highlight {
+	  color: #3D13F5; /* blue */
+	}
+	
+	
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 1000px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+	
+	
+	.image-pair {
+	  display: flex;
+	  gap: 1rem;
+	  margin-top: 1rem;
+	  flex-wrap: wrap;
+	  justify-content: flex-start;
+	}
+
+	.image-pair img {
+	  width: 40%;           /* Reduced from 48% to 30% */
+	  height: auto;
+	  object-fit: cover;
+	  border-radius: 4px;
+	}
+	
+	
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo -->
+  <div class="header-img-wrapper">
+    <a href="file:///Users/pankajrohilla/Downloads/Website/About.html" target="_self" rel="noopener noreferrer">
+      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+    </a>
+  </div>
+  
+  <!-- ✅ Main 3-column layout below the logo -->
+  <div class="main-wrapper">
+    <!-- Left: Link box -->
+    <nav class="link-box">
+      <a href="file:///Users/pankajrohilla/Downloads/Website/About.html">About</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Projects.html">Projects</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Publications.html">Publications</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/CV.html">CV</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Gallery.html">Gallery</a>
+	  <a href="file:///Users/pankajrohilla/Downloads/Website/Travels.html">Travels</a>
+      <a href="file:///Users/pankajrohilla/Downloads/Website/Misc.html">Miscellaneous</a>
+    </nav>
+
+    <!-- Center: Bio text -->
+	<aside class="writing-sidebar">
+	   
+	  <h3> <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/Elsevier.png" alt="Example Image" width="100" /> </h3>
+	  
+	  <h2>Feasibility of laser induced jets in needle free jet injections</h2>  
+		  
+ 	 <p> <span class="highlight"><em>Pankaj Rohilla</em></span> and Jeremy Marston</p>
+	 
+	 
+	 <p>This paper reports a detailed characterization of laser-induced micro-jets, including ex vivo experiments using skin as a target substrate to check the feasibility in terms of needle-free jet injection. The actuation technique comprised a Nd-YAG based laser system to superheat the liquid locally, which creates a pressure wave actuating the motion of the liquid as a jet. Typical jet speeds were &#126;O(100) m/s and diameters &#126;O(10-100) microns and Re &#126;(100-10,000). We studied the effect of various system parameters related to both geometry (e.g., capillary diameter,
+laser focal point) and fluid properties (e.g., viscosity). To advance the understanding of liquid delivery into tissue, transient penetration dynamics and dispersion patterns were studied. Stand-off distance, mechanical strength of the proxy gel, and laser pulse energy were also found to affect the penetration of liquid jets into the skin models.
+
+ </p>
+	  <p> Read the paper <a href="file:///Users/pankajrohilla/Downloads/Website/Publications/laser.pdf">here</a>.</p>
+	 
+ 
+
+  
+
+</body>
+</html>

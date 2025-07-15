@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2 {
+      font-family: 'Adobe Caslon Pro', sans-serif;
+      font-size: 1.8rem;
+    }
+	
+	.writing-sidebar {
+	  float: right;
+	  width: 1000px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+	.highlight {
+	  color: #3D13F5; /* blue */
+	}
+	
+	
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 1000px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+	
+	
+	.image-pair {
+	  display: flex;
+	  gap: 1rem;
+	  margin-top: 1rem;
+	  flex-wrap: wrap;
+	  justify-content: flex-start;
+	}
+
+	.image-pair img {
+	  width: 40%;           /* Reduced from 48% to 30% */
+	  height: auto;
+	  object-fit: cover;
+	  border-radius: 4px;
+	}
+	
+	
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- ✅ Top-left logo -->
+ <div class="header-img-wrapper">
+   <a href="file:///Users/pankajrohilla/Downloads/Website/About.html" target="_self" rel="noopener noreferrer">
+     <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+   </a>
+ </div>
+ 
+ <!-- ✅ Main 3-column layout below the logo -->
+ <div class="main-wrapper">
+   <!-- Left: Link box -->
+   <nav class="link-box">
+     <a href="file:///Users/pankajrohilla/Downloads/Website/About.html">About</a>
+     <a href="file:///Users/pankajrohilla/Downloads/Website/Projects.html">Projects</a>
+     <a href="file:///Users/pankajrohilla/Downloads/Website/Publications.html">Publications</a>
+     <a href="file:///Users/pankajrohilla/Downloads/Website/CV.html">CV</a>
+     <a href="file:///Users/pankajrohilla/Downloads/Website/Gallery.html">Gallery</a>
+  <a href="file:///Users/pankajrohilla/Downloads/Website/Travels.html">Travels</a>
+     <a href="file:///Users/pankajrohilla/Downloads/Website/Misc.html">Miscellaneous</a>
+   </nav>
+
+    <!-- Center: Bio text -->
+	<aside class="writing-sidebar">
+	   
+	  <h3> <img src="file:///Users/pankajrohilla/Downloads/Website/Publications/BioRxiv.jpg" alt="Example Image" width="100" /> </h3>
+	  
+	  <h2>Interfacial vortex recapture enhances thrust in tiny water skaters</h2>  
+		  
+ 	 <p> <span class="highlight"><em>Pankaj Rohilla</em></span>*,  Johnathan N. O’Neil*, Paras Singh, Daehyun Choi, Chandan Bose, and Saad Bhamla</p>
+	 
+	 <p>Vortex recapture underpins the exceptional mobility of nature's finest fliers and swimmers. Utilized by agile fruit flies and efficient jellyfish, this phenomenon is well-documented in bulk fluids. Despite extensive studies on organismal locomotion at the water's surface, a vital fluidic interface where diverse life forms interact, hydrodynamics of interfacial vortex recapture remains unexplored. We investigate interfacial (on water) vortical hydrodynamics in <em>Microvelia americana</em>, one of the smallest and fastest water striders, skating at 50~body lengths per second (BL/s) or 15 cm/s. Their middle legs shed counter-rotating vortices, re-energized by their hind legs, demonstrating interfacial vortex recapture. High-speed imaging, particle imaging velocimetry, physical models, and CFD simulations show re-energization increases thrust by creating positive pressure at the hind tarsi, acting as a virtual wall. This vortex capture is facilitated by the tripod gait, leg morphology, and precise spatio-temporal placement of the hind tarsi during the power stroke. Our study extends vortex recapture principles from bulk fluids to the interface, offering insights into efficient interfacial locomotion, where surface tension and capillary waves challenge movement. Understanding interfacial vortex hydrodynamics can guide the development of energy-efficient microrobots to explore the planet's water surface niches, critical frontlines of climate change and pollution. </p>
+	 
+	 <h3>Comics </h3>
+	 
+	 <div class="image-pair">
+	   <img src="microvelia_p1.jpg" alt="Flamingo p1" />
+	   <img src="microvelia_p2.jpg" alt="Flamingo p2" />
+	 </div>
+	 
+
+  
+
+</body>
+</html>
