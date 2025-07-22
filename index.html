@@ -21,16 +21,16 @@
     h1, h2, h3 {
       font-family: 'Adobe Caslon Pro', 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif;
       font-size: 1.8rem;
-    }
+    } 
 	
-  	@font-face {
-  	  font-family: 'Adobe Caslon Pro';
-  	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
-  	       url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
-  	  font-weight: normal;
-  	  font-style: normal;
-  	  font-display: swap;
-  	}
+	@font-face {
+	  font-family: 'Adobe Caslon Pro';
+	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
+	       url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: swap;
+	}
 
     p {
       font-size: 1rem;
@@ -47,6 +47,33 @@
       width: 170px;
       display: block;
     }
+	
+
+
+	.social-icons {
+	  margin-top: 1rem;
+	  display: flex;
+	  justify-content: center;
+	  gap: 1.2rem;
+	  font-size: 2.4rem;
+	}
+
+	.social-icons a {
+	  color: #000;
+	  transition: color 0.3s;
+	}
+
+	.social-icons a:hover {
+	  color: #3D13F5; /* or any hover color */
+	}
+
+	@font-face {
+	  font-family: 'Adobe Caslon Pro';
+	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
 
     .main-wrapper {
       display: flex;
@@ -84,10 +111,21 @@
 	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
 	}
 	
+	.icon-img {
+	  width: 32px;
+	  height: 32px;
+	  border-radius: 0;       /* Removes circular crop */
+	  object-fit: contain;    /* Makes sure the icon scales properly */
+	}
+	
 
     .bio-image {
-      width: 200px;
-      flex-shrink: 0;
+		width: 200px;
+		  flex-shrink: 0;
+		  display: flex;
+		  flex-direction: column;
+		  padding: 2rem 7rem;
+		  align-items: center;
     }
 
     .bio-image img {
@@ -104,6 +142,8 @@
       font-size: 0.9rem;
       color: #555;
     }
+
+
 
     @media (max-width: 900px) {
       .main-wrapper {
@@ -130,7 +170,7 @@
 </head>
 <body>
 
-  <!-- ✅ Top-left logo -->
+ <!-- ✅ Top-left logo -->
  <div class="header-img-wrapper">
    <a href="https://rohillapankaj.com/About.html" target="_self" rel="noopener noreferrer">
      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
@@ -152,21 +192,35 @@
 
     <!-- Center: Bio text -->
     <main class="content">
-      <h2>Pankaj Rohilla is a postdoctoral research fellow and loves photography.</h2>
+      <h2>Pankaj Rohilla is a postdoctoral research fellow who develops tools for drug delivery and studies the physics of living systems.</h2>
       <p>He develops low-cost medical devices for drug delivery and explores the physics of living systems with <a href="https://bhamla.gatech.edu/" target="_blank" rel="noopener noreferrer">Saad Bhamla</a> and <a href="https://drugdelivery.chbe.gatech.edu/" target="_blank" rel="noopener noreferrer">Mark Prausnitz</a> at the Georgia Institute of Technology. He earned his Ph.D. in Chemical Engineering from Texas Tech University under the guidance of <a href="https://www.depts.ttu.edu/che/faculty/jeremy_marston/index.php" target="_blank" rel="noopener noreferrer">Jeremy Marston</a>.
 From hair-thin microjets and fluidic tattooing to a barbecue-lighter–inspired electroporator, his work combines creativity with function to enable innovative ways of delivering drugs across the skin. Fueled by curiosity, he also investigates how organisms interact with fluids—both on the surface and beneath the water.
-His contributions have been recognized through numerous honors, including the Eckert Postdoctoral Fellowship and the Horn Distinguished Professors Graduate Achievement Award.	  </p>
+His contributions have been recognized through numerous honors, including the <em>Eckert Postdoctoral Fellowship</em> and the <em>Horn Distinguished Professors Graduate Achievement Award</em>.	  </p>
      
-	  <p>He has published 17 peer-reviewed research articles spanning drug delivery, fluid dynamics, biophysics, and energy storage. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets including The Wall Street Journal, New Scientist, The Conversation, and Science News.  </p>
+	  <p>He has published 17 peer-reviewed research articles spanning drug delivery, fluid dynamics, biophysics, and energy storage. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets, including <em>The Wall Street Journal, New Scientist, The Conversation, and Science News</em>.  </p>
 	  
 	  <p> Born and raised in Yamunanagar, he currently resides in Atlanta.</p>
     </main>
 
     <!-- Right: Image -->
-    <div class="bio-image">
-      <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" />
-    </div>
-  </div>
+	<div class="bio-image">
+	  <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" /> <br> 
+	  <div class="social-icons">
+		<a href="https://www.linkedin.com/in/pankajrohilla/" target="_blank" rel="noopener noreferrer">
+	      <i class="fab fa-linkedin-in"></i>
+	    </a>
+	    <a href="https://scholar.google.com/citations?user=rTeuJmkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+	      <i class="fas fa-graduation-cap"></i>
+	    </a>
+		<a href="https://x.com/onlyrohilla" target="_blank" rel="noopener noreferrer">
+		  <i class="fa-brands fa-twitter"></i>
+		</a>
+	  </div> <br> 
+	  pankajrohilla@gatech.edu
+	</div>
+	
+	</div>
+    
 
   <footer>
     &copy; 2025 Pankaj Rohilla. All rights reserved. Template inspired by C Wei.
