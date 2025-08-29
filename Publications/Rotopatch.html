@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pankaj Rohilla</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adobe Caslon Pro', 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif;
+      background-color: #fff;
+      color: #000;
+    }
+	  
+
+
+    h1, h2, h3 {
+      font-family: 'Adobe Caslon Pro', 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif;
+      font-size: 1.8rem;
+    }
+	
+	.writing-sidebar {
+	  float: right;
+	  width: 1000px;
+	  padding: 0 1rem;
+	}
+	.writing-sidebar h2 {
+	  font-size: 1.5rem;
+	  margin-top: 0;
+	}
+	.writing-sidebar h3 {
+	  margin-top: 0rem;
+	  font-size: 1.2rem;
+	}
+	.writing-sidebar ul {
+	  list-style: none;
+	  padding-left: 0;
+	}
+	.writing-sidebar li {
+	  margin-bottom: 0.5rem;
+	}
+	.writing-sidebar a {
+	  text-decoration: none;
+	  color: #0066cc;
+	}
+	.writing-sidebar a:hover {
+	  text-decoration: underline;
+	}
+	
+	.highlight {
+	  color: #3D13F5; /* blue */
+	}
+	
+	
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-img-wrapper {
+      padding: 2rem 3rem 0rem;
+    }
+
+    .header-img {
+      height: 35px;
+      width: 170px;
+      display: block;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
+      max-width: 100%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .link-box {
+	  width: 200px;
+      padding: 2rem 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0.5rem 0rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 1000px;
+	  margin-top: -1.5rem;
+    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+
+    .bio-image {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .bio-image img {
+		width: 400px;             /* Set fixed size */
+		  height: 400px;            /* Make it square */
+		  object-fit: cover;        /* Crop the image cleanly */
+		  border-radius: 50%;       /* Make it circular */
+		  display: block;
+    }
+	
+	
+	.image-pair {
+	  display: flex;
+	  gap: 1rem;
+	  margin-top: 1rem;
+	  flex-wrap: wrap;
+	  justify-content: flex-start;
+	}
+
+	.image-pair img {
+	  width: 40%;           /* Reduced from 48% to 30% */
+	  height: auto;
+	  object-fit: cover;
+	  border-radius: 4px;
+	}
+	
+	
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box, .bio-image {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .header-img-wrapper {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo -->
+  <div class="header-img-wrapper">
+    <a href="https://pankajrohilla.com/About.html" target="_self" rel="noopener noreferrer">
+      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+    </a>
+  </div>
+ 
+  <!-- ✅ Main 3-column layout below the logo -->
+  <div class="main-wrapper">
+    <!-- Left: Link box -->
+    <nav class="link-box">
+      <a href="https://pankajrohilla.com/About.html">About</a>
+      <a href="https://pankajrohilla.com/Projects.html">Projects</a>
+      <a href="https://pankajrohilla.com/Publications.html">Publications</a>
+      <a href="https://pankajrohilla.com/CV.html">CV</a>
+      <a href="https://pankajrohilla.com/Gallery.html">Gallery</a>
+      <a href="https://pankajrohilla.com/Travels.html">Travels</a>
+      <a href="https://pankajrohilla.com/Misc.html">Miscellaneous</a>
+    </nav>
+
+    <!-- Center: Bio text -->
+	<aside class="writing-sidebar">
+	   
+	  <h3> <img src="Elsevier.png" alt="Example Image" width="100" /> </h3>
+	  
+	  <h2>Low-cost, handheld, multi-pulse electroporators for simplified nucleic acid delivery in skin</h2>  
+		  
+ 	 <p>  <span class="highlight"><em>Pankaj Rohilla</em></span>*, E. Azizoglu, S Park, A Lele, M. R. Prausnitz, and S. Bhamla </p>
+	 
+	 
+	 <p>
+Electroporation-mediated delivery offers a promising alternative to carrier-based nucleic acid delivery methods for vaccination and therapeutic applications. Carrier-based systems like lipid nanoparticles and viral vectors often suffer from poor in vivo stability, immunogenicity, toxicity, and off-target effects. To overcome the high cost, bulkiness, lack of portability, and painful administration of traditional electroporators, we developed the RotoPatch family of a small, low-cost, hand-held piezoelectric electroporators that use microneedle electrodes for intradermal delivery of nucleic acids. Notably, these RotoPatch uses a single rotary motion to administer multiple electroporation pulses through microneedle electrodes that localize the electric field to the upper layers of skin. In animals, RotoPatch facilitated greater intracellular uptake of firefly luciferase-encoded mRNA in mice and green fluorescent protein (GFP)-encoded plasmid DNA in rats, as confirmed by bioluminescence and fluorescence imaging, respectively. RotoPatch produced similar in vivo expression as electroporation using a manually actuated, multi-pulse piezoelectric electroporator (ePatch) and a battery-powered, multi-pulse electroporator (eIgniter). These findings highlight the potential of multi-pulse piezoelectric microneedle electroporation for intradermal nucleic acid delivery as a platform for gene therapy and vaccination. </p>
+	  <p> Read the paper soon...</p>
+	 
+ 
+
+  
+
+</body>
+</html>
