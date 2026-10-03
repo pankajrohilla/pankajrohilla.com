@@ -5,32 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pankaj Rohilla</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NKPF79E0W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2NKPF79E0W');
-  </script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NKPF79E0W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2NKPF79E0W');
+</script>
+	
 
   <style>
     body {
       margin: 0;
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'Adobe Caslon Pro', 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif;
       background-color: #fff;
       color: #000;
     }
+	  
+
 
     h1, h2, h3 {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.4rem;
-    }
+      font-family: 'Adobe Caslon Pro', 'Cormorant Garamond', 'EB Garamond', 'Georgia', serif;
+      font-size: 1.8rem;
+    } 
+	
+	@font-face {
+	  font-family: 'Adobe Caslon Pro';
+	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
+	       url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: swap;
+	}
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
     }
@@ -44,36 +57,46 @@
       width: 170px;
       display: block;
     }
+	
 
-    .social-icons {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
-      font-size: 2.4rem;
-    }
 
-    .social-icons a {
-      color: #000;
-      transition: color 0.3s;
-    }
+	.social-icons {
+	  margin-top: 1rem;
+	  display: flex;
+	  justify-content: center;
+	  gap: 1.2rem;
+	  font-size: 2.4rem;
+	}
 
-    .social-icons a:hover {
-      color: #3D13F5;
-    }
+	.social-icons a {
+	  color: #000;
+	  transition: color 0.3s;
+	}
+
+	.social-icons a:hover {
+	  color: #3D13F5; /* or any hover color */
+	}
+
+	@font-face {
+	  font-family: 'Adobe Caslon Pro';
+	  src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
 
     .main-wrapper {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 0rem 2rem 2rem;
+      padding: 0rem 2rem 2rem; /* top, horizontal, bottom */
       max-width: 100%;
       margin: 0 auto;
       gap: 1rem;
     }
 
     .link-box {
-      width: 200px;
+	  width: 200px;
       padding: 2rem 1.4rem;
       flex-shrink: 0;
     }
@@ -83,53 +106,58 @@
       text-decoration: none;
       color: #000;
       padding: 0.5rem 0rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .content {
       flex: 1;
       max-width: 550px;
-      margin-top: -1.5rem;
+	  margin-top: -1.5rem;
     }
-
-    .content a {
-      text-decoration: none;
-      font-style: italic;
-      color: #3D13F5;
-    }
-
-    .icon-img {
-      width: 32px;
-      height: 32px;
-      border-radius: 0;
-      object-fit: contain;
-    }
-
-    .bio-image {
-      width: 280px;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      padding: 2rem 3rem;
-      align-items: center;
-    }
+	
+	.content a {
+	  text-decoration: none;   /* removes underline */
+	  font-style: italic;      /* italic text */
+	  color: #3D13F5;          /* blue hyperlink color (Google-style blue) */
+	}
+	
+	.icon-img {
+	  width: 32px;
+	  height: 32px;
+	  border-radius: 0;       /* Removes circular crop */
+	  object-fit: contain;    /* Makes sure the icon scales properly */
+	}
+	
+	
+   .bio-image {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  align-items: center;
+}
 
     .bio-image img {
-      width: 280px;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 50%;
-      display: block;
-    }
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+	 
+	  
 
     footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #555;
     }
+
+
 
     @media (max-width: 900px) {
       .main-wrapper {
@@ -156,59 +184,61 @@
 </head>
 <body>
 
-  <!-- Top-left logo -->
-  <div class="header-img-wrapper">
-    <a href="https://pankajrohilla.com/About.html" target="_self" rel="noopener noreferrer">
-      <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
-    </a>
-  </div>
-
-  <!-- Main 3-column layout below the logo -->
-  <div class="main-wrapper">
-    <!-- Left: Link box -->
-    <nav class="link-box">
-      <a href="https://pankajrohilla.com/About.html">About</a>
-      <a href="https://pankajrohilla.com/Projects.html">Projects</a>
-      <a href="https://pankajrohilla.com/Publications.html">Publications</a>
-      <a href="https://pankajrohilla.com/CV.html">CV</a>
-      <a href="https://pankajrohilla.com/Gallery.html">Gallery</a>
-      <a href="https://pankajrohilla.com/Travels.html">Travels</a>
-      <a href="https://pankajrohilla.com/Misc.html">Miscellaneous</a>
-    </nav>
+ <!-- ✅ Top-left logo -->
+ <div class="header-img-wrapper">
+   <a href="https://pankajrohilla.com/About.html" target="_self" rel="noopener noreferrer">
+     <img src="sign_pankaj.jpg" alt="Pankaj Rohilla" class="header-img" />
+   </a>
+ </div>
+ 
+ <!-- ✅ Main 3-column layout below the logo -->
+ <div class="main-wrapper">
+   <!-- Left: Link box -->
+   <nav class="link-box">
+     <a href="https://pankajrohilla.com/About.html">About</a>
+     <a href="https://pankajrohilla.com/Projects.html">Projects</a>
+     <a href="https://pankajrohilla.com/Publications.html">Publications</a>
+     <a href="https://pankajrohilla.com/CV.html">CV</a>
+     <a href="https://pankajrohilla.com/Gallery.html">Gallery</a>
+     <a href="https://pankajrohilla.com/Travels.html">Travels</a>
+     <a href="https://pankajrohilla.com/Misc.html">Miscellaneous</a>
+   </nav>
 
     <!-- Center: Bio text -->
     <main class="content">
-      <h2>Developing tools for drug delivery/diagnostics &amp; deciphering the physics of living systems.</h2>
-
+     <h2>Developing tools for drug delivery/diagnostics &amp; deciphering the physics of living systems.</h2>
+		
       <p>Pankaj develops low-cost tools for drug delivery and diagnostics (w/ <a href="https://drugdelivery.chbe.gatech.edu/" target="_blank" rel="noopener noreferrer">Mark Prausnitz</a>) and studies the physics of living systems (previously w/ <a href="https://bhamla.com/people" target="_blank" rel="noopener noreferrer">Saad Bhamla</a>) at the Georgia Institute of Technology. He earned his Ph.D. in Chemical Engineering from Texas Tech University under the guidance of <a href="https://www.depts.ttu.edu/che/faculty/jeremy_marston/index.php" target="_blank" rel="noopener noreferrer">Jeremy Marston</a>.
-      From hair-thin microjets and fluidic tattooing to a barbecue-lighter–inspired electroporator, his work combines creativity with function to enable innovative ways of delivering drugs across the skin. Charged by curiosity, he has investigated how organisms interact with fluids, both on the surface and beneath the water.
-      His research contributions have been recognized through numerous honors, including the <em>Eckert Postdoctoral Fellowship</em> and the <em>Horn Distinguished Professors Graduate Achievement Award</em>.</p>
-
-      <p>He has published 19 peer-reviewed research articles spanning drug delivery, fluid dynamics, and biophysics. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets, including <em>The Wall Street Journal, New Scientist, The Conversation, and Science News</em>.</p>
-
-      <p>Born and raised in Yamunanagar, he currently resides in Atlanta.</p>
+From hair-thin microjets and fluidic tattooing to a barbecue-lighter–inspired electroporator, his work combines creativity with function to enable innovative ways of delivering drugs across the skin. Charged by curiosity, he has investigated how organisms interact with fluids, both on the surface and beneath the water.
+His research contributions have been recognized through numerous honors, including the <em>Eckert Postdoctoral Fellowship</em> and the <em>Horn Distinguished Professors Graduate Achievement Award</em>.	  </p>
+     
+	  <p>He has published 19 peer-reviewed research articles spanning drug delivery, fluid dynamics, and biophysics. His work has appeared in leading journals such as PNAS, International Journal of Pharmaceutics, Langmuir, and Journal of Drug Delivery Science and Technology. His research has also been featured in prominent media outlets, including <em>The Wall Street Journal, New Scientist, The Conversation, and Science News</em>.  </p>
+	  
+	  <p> Born and raised in Yamunanagar, he currently resides in Atlanta.</p>
     </main>
 
     <!-- Right: Image -->
-    <div class="bio-image">
-      <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" /> <br>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/pankajrohilla/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=rTeuJmkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://x.com/onlyrohilla" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </div> <br>
-      pankajrohilla@gatech.edu
-    </div>
-  </div>
+	<div class="bio-image">
+	  <img src="IMG_0964-Enhanced-NR.jpg" alt="Pankaj Rohilla" /> <br> 
+	  <div class="social-icons">
+		<a href="https://www.linkedin.com/in/pankajrohilla/" target="_blank" rel="noopener noreferrer">
+	      <i class="fab fa-linkedin-in"></i>
+	    </a>
+	    <a href="https://scholar.google.com/citations?user=rTeuJmkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+	      <i class="fas fa-graduation-cap"></i>
+	    </a>
+		<a href="https://x.com/onlyrohilla" target="_blank" rel="noopener noreferrer">
+		  <i class="fa-brands fa-twitter"></i>
+		</a>
+	  </div> <br> 
+	  pankajrohilla@gatech.edu
+	</div>
+	
+	</div>
+    
 
   <footer>
-    &copy; 2026 Pankaj Rohilla. All rights reserved.
+    &copy; 2026 Pankaj Rohilla. All rights reserved.  
   </footer>
 
 </body>
