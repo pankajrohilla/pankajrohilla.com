@@ -128,7 +128,7 @@
 	  object-fit: contain;    /* Makes sure the icon scales properly */
 	}
 	
-
+	
     .bio-image {
 		width: 200px;
 		  flex-shrink: 0;
@@ -139,12 +139,15 @@
     }
 
     .bio-image img {
-		width: 400px;             /* Set fixed size */
-		  height: 400px;            /* Make it square */
-		  object-fit: cover;        /* Crop the image cleanly */
-		  border-radius: 50%;       /* Make it circular */
-		  display: block;
-    }
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+	  
+	  
 
     footer {
       text-align: center;
